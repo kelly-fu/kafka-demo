@@ -21,3 +21,12 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       # value的Serializer类，实现类实现了接口org.apache.kafka.common.serialization.Serializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      # 消费者组名称
+      group-id: es_group
+      # 是否自动提交
+      enable-auto-commit: true
+      # 实时消费
+      auto-offset-reset: latest
+    template:
+      es-topic: es
