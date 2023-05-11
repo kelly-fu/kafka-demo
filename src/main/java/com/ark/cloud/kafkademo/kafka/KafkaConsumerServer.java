@@ -30,6 +30,8 @@ public class KafkaConsumerServer {
 		System.out.println("接收到分片0需要写入ES的消息: " + record);
 	}
 
+	
+
 
 
 }
